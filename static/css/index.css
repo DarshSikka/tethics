@@ -3,42 +3,11 @@
   --app-dark: #02223e;
   --app-light: #ffffff;
 }
-.phoneMenu {
-  font-size: 50px;
-  padding: 0px 0px;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  overflow-x: none;
-}
 
 @media (min-width: 800px) {
-  .phoneMenu {
-    display: none;
-  }
-
   .responsive-arrow {
     bottom: 12rem;
   }
-}
-.nav {
-  display: flex;
-  justify-content: space-around;
-}
-nav {
-  position: fixed;
-  z-index: 4;
-  top: 0px;
-  height: 5.5rem;
-  width: 100%;
-  background-color: var(--app-light);
-}
-.navbar-head {
-  margin-top: 4px;
-}
-.nav-link {
-  text-decoration: none;
-  color: var(--app-dark);
 }
 select {
   background: var(--app-light);
@@ -50,20 +19,9 @@ select {
 }
 .faculty-heading {
   position: absolute;
-  top: 47rem;
+  top: 48rem;
   width: 100%;
   left: 0;
-}
-.navbar-head {
-  display: flex;
-  height: 100%;
-  align-items: center;
-}
-.pc-menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 20vw;
 }
 .hero-text {
   position: absolute;
@@ -84,6 +42,10 @@ select {
   .pc-menu {
     display: none;
   }
+
+  nav {
+    width: 100vw;
+  }
   .hero {
     height: 25%;
     top: 6rem;
@@ -92,9 +54,6 @@ select {
     top: 8rem;
     left: 0.4rem;
     width: 98%;
-  }
-  nav {
-    width: 100vw;
   }
   .faculty-heading {
     position: absolute;
@@ -200,7 +159,6 @@ form {
   }
 }
 .admission input,
-button,
 select {
   width: 35rem;
   padding: 10px 20px;
@@ -208,6 +166,14 @@ select {
   border: 0px;
   font-size: 20px;
   margin-top: 5px;
+}
+button {
+  padding: 1rem 2rem;
+  background-color: var(--app-light);
+  border: 0px;
+  border-radius: 4px;
+  color: var(--app-dark);
+  font-size: 20px;
 }
 select {
   width: 37.5rem;
@@ -230,33 +196,5 @@ option[disabled] {
 @media (min-width: 800px) {
   .form-button {
     margin-left: 30px;
-  }
-}
-.footer {
-  width: 100%;
-  height: 20rem;
-  background-color: var(--app-dark);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer h1 {
-  color: var(--app-light) !important;
-  font-weight: 400 !important;
-  font-size: 23px !important;
-}
-.information-item {
-  color: var(--app-light);
-  font-weight: 400;
-  font-size: 15px;
-  text-align: left;
-}
-@media (max-width: 800px) {
-  .footer {
-    margin-top: 2rem;
-  }
-  .footer {
-    flex-direction: column;
-    height: 50rem !important;
   }
 }

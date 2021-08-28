@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+:root {
+  --app-dark: #02223e;
+  --app-light: #ffffff;
+}
+
+.phoneMenu {
+  font-size: 50px;
+  padding: 0px 0px;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: none;
+}
+nav {
+  position: fixed;
+  z-index: 4;
+  top: 0px;
+  height: 5.5rem;
+  width: 100%;
+  background-color: var(--app-light);
+}
+.navbar-head {
+  margin-top: 4px;
+}
+.navbar-head {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--app-dark);
+}
+
+.footer {
+  width: 100%;
+  height: 20rem;
+  background-color: var(--app-dark);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer h1 {
+  color: var(--app-light) !important;
+  font-weight: 400 !important;
+  font-size: 23px !important;
+}
+.information-item {
+  color: var(--app-light);
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .footer {
+    margin-top: 2rem;
+  }
+  .footer {
+    flex-direction: column;
+    height: 50rem !important;
+  }
+  .pc-menu {
+    display: none !important;
+  }
+  nav {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .phoneMenu {
+    display: none;
+  }
+}
+
+.pc-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20vw;
+}
