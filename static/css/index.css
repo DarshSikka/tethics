@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+:root {
+  --app-dark: #02223e;
+  --app-light: #ffffff;
+}
+.phoneMenu {
+  font-size: 50px;
+  padding: 0px 0px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 800px) {
+  .phoneMenu {
+    display: none;
+  }
+
+  .responsive-arrow {
+    bottom: 12rem;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+}
+nav {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  background-color: var(--app-light);
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--app-dark);
+}
+select {
+  background: var(--app-light);
+}
+.slide-name {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--app-dark);
+}
+.faculty-heading {
+  position: absolute;
+  top: 47rem;
+  width: 100%;
+  left: 0;
+}
+.navbar-head {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.pc-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20vw;
+}
+.hero-text {
+  position: absolute;
+  z-index: 2;
+  background: rgba(96, 96, 96, 0.5);
+  top: 20rem;
+  left: 10rem;
+  color: var(--app-light) !important;
+  width: 23%;
+}
+.hero {
+  z-index: -1;
+  height: 80%;
+  width: 98%;
+  top: 8rem;
+}
+@media (max-width: 800px) {
+  .pc-menu {
+    display: none;
+  }
+  .hero {
+    height: 25%;
+  }
+  .hero-text {
+    top: 8rem;
+    left: 0.4rem;
+    width: 98%;
+  }
+
+  .faculty-heading {
+    position: absolute;
+    top: 20rem;
+  }
+}
+@media (max-width: 800px) {
+  .faculty-image {
+    width: 100px;
+  }
+
+  .responsive-arrow {
+    bottom: 6.7rem;
+  }
+}
+.faculty-heading h1 {
+  font-size: 36px;
+}
+@media (min-width: 800px) {
+  #why-us {
+    position: absolute;
+    top: 70rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #why-us {
+    position: absolute;
+    top: 35rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+#why-us h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--app-dark);
+}
+#faculty-title {
+  color: var(--app-dark);
+}
+.card-image {
+  width: 19rem;
+  height: 12rem;
+}
+.card {
+  width: 22rem;
+  height: 20rem;
+  margin-left: 0.4rem;
+  background: var(--app-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  align-items: center;
+}
+.card-text {
+  color: var(--app-light);
+  font-size: 30px;
+  font-weight: 400;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+    height: 65rem;
+  }
+}
+.admission {
+  width: 60%;
+  color: white;
+  background: var(--app-dark);
+  height: 30rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 0rem 10rem;
+}
+@media (max-width: 800px) {
+  form {
+    padding: 0rem 1rem;
+  }
+  .admission {
+    width: 100%;
+  }
+  .admission input,
+  button {
+    width: 18rem !important;
+  }
+  select {
+    width: 20.5rem !important;
+  }
+}
+.admission input,
+button,
+select {
+  width: 35rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 0px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+select {
+  width: 37.5rem;
+}
+.form-label {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+option[disabled] {
+  color: red;
+}
+.form-button {
+  margin-top: 20px;
+}
+@media (min-width: 800px) {
+  .form-button {
+    margin-left: 30px;
+  }
+}
+.footer {
+  width: 100%;
+  height: 20rem;
+  background-color: var(--app-dark);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer h1 {
+  color: var(--app-light) !important;
+  font-weight: 400 !important;
+  font-size: 23px !important;
+}
+.information-item {
+  color: var(--app-light);
+  font-weight: 400;
+  font-size: 15px;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .footer {
+    margin-top: 2rem;
+  }
+  .footer {
+    flex-direction: column;
+    height: 50rem !important;
+  }
+}

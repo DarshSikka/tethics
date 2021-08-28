@@ -1,0 +1,16 @@
+{
+  "name": "tethics-school-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node app.ts",
+    "dev": "nodemon --watch *.ts --exec 'ts-node' app.ts"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
