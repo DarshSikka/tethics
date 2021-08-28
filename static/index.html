@@ -28,7 +28,7 @@
         </div>
     </div>
     </nav>
-    <div id="phone-bottom" style="display: none;flex-direction:column;text-align: center;">
+    <div id="phone-bottom" style="display: none;flex-direction:column;text-align: center;width: 100%; position: absolute; top: 10rem;">
         <a href="/facilities" class="nav-link">
             Facilities
             </a>
@@ -48,14 +48,14 @@
             <h1 id="faculty-title">
                 Our <span id="bril">brilliant</span> Faculty
             </h1>
-                <i id="previous" class="fas fa-chevron-left responsive-arrow" style="position: absolute;  left: 10vw;"></i>
+                <i id="previous" onclick="prev()"class="fas fa-chevron-left responsive-arrow" style="position: absolute;  left: 10vw;"></i>
                 <div>
-                <img src="assets/Principal.png" class="faculty-image"/><br />
+                <img src="assets/Principal.png" class="faculty-image slide-image"/><br />
                 <span class="slide-name">John Doe</span><br />
-                <span>Principal</span><br />
-                <span>Padma Bhushan</span>
+                <span class="slide-designation">Principal</span><br />
+                <span class="slide-award">Padma Bhushan</span>
                 </div>
-                <i id="next" class="fas fa-chevron-right responsive-arrow" style="position: absolute;  left: 90vw;"></i>
+                <i id="next" onclick="next()"class="fas fa-chevron-right responsive-arrow" style="position: absolute;  left: 90vw;"></i>
         </div>
     </center>
     <div id="why-us">

@@ -9,6 +9,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: none;
 }
 
 @media (min-width: 800px) {
@@ -23,13 +24,17 @@ body {
 .nav {
   display: flex;
   justify-content: space-around;
-  height: 6rem;
 }
 nav {
   position: fixed;
   z-index: 4;
+  top: 0px;
+  height: 5.5rem;
   width: 100%;
   background-color: var(--app-light);
+}
+.navbar-head {
+  margin-top: 4px;
 }
 .nav-link {
   text-decoration: none;
@@ -73,7 +78,7 @@ select {
   z-index: -1;
   height: 80%;
   width: 98%;
-  top: 8rem;
+  top: 4rem;
 }
 @media (max-width: 800px) {
   .pc-menu {
@@ -81,17 +86,24 @@ select {
   }
   .hero {
     height: 25%;
+    top: 6rem;
   }
   .hero-text {
     top: 8rem;
     left: 0.4rem;
     width: 98%;
   }
-
+  nav {
+    width: 100vw;
+  }
   .faculty-heading {
     position: absolute;
     top: 20rem;
   }
+}
+.faculty-image {
+  width: 200px;
+  border-radius: 100%;
 }
 @media (max-width: 800px) {
   .faculty-image {
