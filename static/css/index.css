@@ -23,21 +23,6 @@ select {
   width: 100%;
   left: 0;
 }
-.hero-text {
-  position: absolute;
-  z-index: 2;
-  background: rgba(96, 96, 96, 0.5);
-  top: 20rem;
-  left: 10rem;
-  color: var(--app-light) !important;
-  width: 23%;
-}
-.hero {
-  z-index: -1;
-  height: 80%;
-  width: 98%;
-  top: 4rem;
-}
 @media (max-width: 800px) {
   .pc-menu {
     display: none;
@@ -45,15 +30,6 @@ select {
 
   nav {
     width: 100vw;
-  }
-  .hero {
-    height: 25%;
-    top: 6rem;
-  }
-  .hero-text {
-    top: 8rem;
-    left: 0.4rem;
-    width: 98%;
   }
   .faculty-heading {
     position: absolute;
@@ -97,6 +73,9 @@ select {
   font-size: 36px;
   font-weight: 700;
   color: var(--app-dark);
+}
+.why-us-heading {
+  margin-top: 4rem;
 }
 #faculty-title {
   color: var(--app-dark);
@@ -197,4 +176,7 @@ option[disabled] {
   .form-button {
     margin-left: 30px;
   }
+}
+.admission-heading {
+  margin-top: 5rem;
 }

@@ -7,6 +7,9 @@ const port: string | number = process.env.PORT || 9000;
 app.get("/", (req: express.Request, res: express.Response) => {
   res.sendFile(stat + "/index.html");
 });
+app.get("/facilities", (req: express.Request, res: express.Response) => {
+  res.sendFile(stat + "/facilities.html");
+});
 app.get("*", (req: express.Request, res: express.Response) => {
   res.sendFile(stat + "/404.html");
 });

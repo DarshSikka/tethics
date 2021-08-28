@@ -3,10 +3,41 @@
   --app-dark: #02223e;
   --app-light: #ffffff;
 }
-
+body {
+  overflow-x: hidden !important;
+}
+.hero-text {
+  position: absolute;
+  z-index: 2;
+  background: rgba(96, 96, 96, 0.9);
+  top: 20rem;
+  left: 10rem;
+  color: var(--app-light) !important;
+  width: 23%;
+}
+.hero {
+  z-index: -1;
+  height: 80%;
+  width: 98%;
+  top: 4rem;
+}
+.pc-menu {
+  margin-left: 6rem;
+}
 .phoneMenu {
   font-size: 50px;
   padding: 0px 0px;
+}
+@media (max-width: 800px) {
+  .hero {
+    height: 25%;
+    top: 6rem;
+  }
+  .hero-text {
+    top: 8rem;
+    left: 0.4rem;
+    width: 98%;
+  }
 }
 .nav {
   display: flex;
@@ -39,16 +70,22 @@ nav {
 
 .footer {
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   background-color: var(--app-dark);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 2rem 0rem;
 }
 .footer h1 {
   color: var(--app-light) !important;
   font-weight: 400 !important;
   font-size: 23px !important;
+  text-align: left;
+  margin-top: 4rem;
+}
+iframe {
+  margin-top: 0.9rem;
 }
 .information-item {
   color: var(--app-light);
@@ -63,12 +100,13 @@ nav {
   .footer {
     flex-direction: column;
     height: 50rem !important;
+    padding: 0px;
   }
   .pc-menu {
     display: none !important;
   }
   nav {
-    width: 100vw;
+    width: 100% !important;
   }
 }
 
