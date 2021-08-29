@@ -15,7 +15,7 @@
    <nav>
         <div class="nav">
         <div class="navbar-head">
-            <a href="/"><img src="assets/logo.png" /></a>
+            <a href="/" class="nav-link"><img src="assets/logo.png" /></a>
         </div>
         <div class="phoneMenu">
             ☰
@@ -86,15 +86,15 @@
         <h1 class="admission-heading">Admissions</h1>
         <div class="center">
         <div class="admission">
-            <form>
+            <form method="POST" action="/admission">
             <label class="form-label">Name</label>
-            <input type="text" placeholder="John Doe" />
+            <input required name="name" type="text" placeholder="John Doe" />
             <label class="form-label">Contact Number</label>
-            <input type="text" placeholder="9999999999" />
+            <input required name="phone"type="text" placeholder="9999999999" />
             <label class="form-label">Email</label>
-            <input type="email" placeholder="johndoe@email.com" />
+            <input required name="email" type="email" placeholder="johndoe@email.com" />
             <label class="form-label">Class</label>
-            <select>
+            <select name="grade">
                 <option disabled selected>
                     Select a class
                 </option>

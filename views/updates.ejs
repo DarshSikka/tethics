@@ -1,0 +1,6 @@
+
+<div style="margin-top: 10rem;text-align: center;"><% updates.forEach(update=>{ %>
+<h1><a href="/update/<%= update._id %>"><%= update.title %></a></h1>
+<h5> <%- update.description.substring(0, 40)%>...</h5>
+<% }) %>
+</div>
