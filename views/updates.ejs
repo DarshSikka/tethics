@@ -1,6 +1,14 @@
 
-<div style="margin-top: 10rem;text-align: center;"><% updates.forEach(update=>{ %>
-<h1><a href="/update/<%= update._id %>"><%= update.title %></a></h1>
-<h5> <%- update.description.substring(0, 40)%>...</h5>
-<% }) %>
+<div class="updates"><% updates.forEach(update=>{ %>
+    <% console.log(update) %>
+    <a href="/update/<%= update._id %>" class="update-link">
+        <div class="update-column">
+            <h1><%= update.title %></h1>
+            <h5> <%- update.description.substring(0, 40)%>...</h5>
+        </div>
+        </a>    
+        <% }) %>
 </div>
+<style>
+    @import url("/css/updates.css");
+</style>

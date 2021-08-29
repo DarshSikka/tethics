@@ -1,3 +1,5 @@
+// Contains database model and interface for handling Student Admissions
+
 import * as mongoose from "mongoose";
 import { Schema } from "mongoose";
 export interface Student {

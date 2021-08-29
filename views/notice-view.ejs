@@ -1,9 +1,15 @@
 
-<div style="margin-top: 12rem">
+<div style="margin-top: 12rem" class="notice">
     <h1>
         <%= notice.title %>
-        <%- notice.description %>
-        <iframe src="<%= notice.attachment %>" width="400" height="400"></iframe>
-        <% console.log(notice.attachment) %>
     </h1>
+        <%- notice.description %><br /><br />
+        <embed src="<%= notice.attachment %>" />
+        <br />
+        <a href="<%= notice.attachment %>" target="_blank">Open attachment in new tab</a>
+        <% console.log(notice.attachment) %>
 </div>
+<style>
+
+    @import url("/css/notice-view.css");
+</style>

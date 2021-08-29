@@ -1,0 +1,5 @@
+@import url("css/layout.css");
+.notice {
+  text-align: center;
+  color: var(--app-dark);
+}

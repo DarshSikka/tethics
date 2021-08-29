@@ -1,3 +1,5 @@
+// Contains database model and interface for Notices
+
 import * as mongoose from "mongoose";
 export interface notice {
   title: string;

@@ -1,3 +1,4 @@
+// This file contains responsive navbar code, used in every page in the website
 document.querySelector(".phoneMenu").addEventListener("click", (e) => {
   const phoneBottom = document.querySelector("#phone-bottom");
   phoneBottom.style.display =

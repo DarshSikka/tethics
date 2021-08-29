@@ -4,8 +4,9 @@
 }
 .below-hero {
   position: absolute;
-  top: 46rem;
+  top: 54rem;
   width: 100%;
+  margin-bottom: 10rem;
 }
 @keyframes cursor {
   0% {
@@ -26,7 +27,7 @@
   color: orange;
 }
 .arrow {
-  font-size: 90px;
+  font-size: 70px;
 }
 .main-card {
   width: 70vh;
@@ -70,6 +71,7 @@
   .main-card {
     width: 90vh;
     height: 50vh;
+    border-radius: 0%;
   }
   .main-card-image {
     width: 70vw;
@@ -77,6 +79,14 @@
     margin-top: 10rem;
   }
   .main-card-text {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
+  }
+}
+.footer {
+  margin-top: 10rem;
+}
+@media (max-width: 800px) {
+  .footer {
+    margin-top: 5rem;
   }
 }

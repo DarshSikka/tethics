@@ -1,7 +1,10 @@
+// Redirect to / if address is index.html
 const url = window.location.href.split("/")[3];
 if (url == "index.html") {
   window.location.href = "/";
 }
+
+// Provide data for slideshow
 const faculty = [
   {
     name: "John Doe",
@@ -22,6 +25,8 @@ const faculty = [
     image: "assets/SeniorSupervisor.jpg",
   },
 ];
+
+// Make slideshow work
 let i = 0;
 const img = document.querySelector(".slide-image");
 const fullname = document.querySelector(".slide-name");
