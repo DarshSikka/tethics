@@ -19,7 +19,7 @@ select {
 }
 .faculty-heading {
   position: absolute;
-  top: 50rem;
+  top: 57rem;
   width: 100%;
   left: 0;
 }
@@ -55,7 +55,7 @@ select {
 @media (min-width: 801px) {
   #why-us {
     position: absolute;
-    top: 70rem;
+    top: 78rem;
     width: 100%;
     text-align: center;
   }

@@ -1,11 +1,19 @@
 <div style="margin-top: 6rem;">
     <% admissions.forEach((admission)=>{%>
     <form method="POST" action="/admin/resolveadmission">
-        <input name="student_name"readonly value="<%= admission.name %>"/>
-        <input name="student_grade"readonly value="<%= admission.grade %>" />
-        <input name="student_email" readonly value="<%= admission.email %>" />
-        <input name="student_phone" readonly value="<%= admission.phone %>" />
+        <div><label>Name:</label><input name="student_name"readonly value="<%= admission.name %>"/></div>
+        <div><label>Grade:</label><input name="student_grade"readonly value="<%= admission.grade %>" /></div>
+        <div><label>Email:</label><input name="student_email" readonly value="<%= admission.email %>" /></div>
+        <div><label>Phone:</label><input name="student_phone" readonly value="<%= admission.phone %>" /></div>
         <button>Resolve</button>
      </form>
     <% })%>
 </div>
+<style>
+    input{
+        padding: 0.5rem;
+        font-size: 17px;
+        margin-top: 2px;
+        border-color: navy;
+    }
+</style>
