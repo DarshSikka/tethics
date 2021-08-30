@@ -100,7 +100,7 @@ router.post("/resolveadmission", (req, res) => {
         */
       sendMail(
         student_email,
-        "<h1>You have been selected for tethics eccellence academy admission! Contact admission@tethicsacademy.com for more information</h1>",
+        "<h1>You have been selected for tethics excellence academy admission! Contact admission@tethicsacademy.com for more information</h1>",
         "Tethics Excellence Academy Selection"
       ).then(() => {
         console.log("Mail sent");
