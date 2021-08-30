@@ -19,15 +19,19 @@ select {
 }
 .faculty-heading {
   position: absolute;
-  top: 57rem;
+  top: 47rem;
   width: 100%;
   left: 0;
+}
+@media (min-width: 1900px) {
+  .faculty-heading {
+    top: 57rem;
+  }
 }
 @media (max-width: 800px) {
   .pc-menu {
     display: none;
   }
-
   nav {
     width: 100vw;
   }
@@ -55,9 +59,14 @@ select {
 @media (min-width: 801px) {
   #why-us {
     position: absolute;
-    top: 78rem;
+    top: 68rem;
     width: 100%;
     text-align: center;
+  }
+}
+@media (min-width: 1900px) {
+  #why-us {
+    top: 78rem;
   }
 }
 
