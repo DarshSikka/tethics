@@ -18,10 +18,11 @@ body {
   position: absolute;
   z-index: 2;
   background: rgba(96, 96, 96, 0.9);
-  top: 20rem;
+  top: 15rem;
   left: 34rem;
   color: var(--app-light) !important;
   width: 23%;
+  padding: 1rem;
 }
 /* Make text more transparent because it comes on the full image when a small device*/
 @media (max-width: 800px) {
@@ -127,8 +128,13 @@ iframe {
   }
   .footer {
     flex-direction: column;
+    align-items: left;
+    justify-content: left;
     height: 50rem !important;
     padding: 0px;
+  }
+  .footer-text {
+    flex-direction: column !important;
   }
   .pc-menu {
     display: none !important;
@@ -137,9 +143,20 @@ iframe {
     width: 100% !important;
   }
 }
-
+.footer-text {
+  display: flex;
+  justify-content: space-around;
+}
+.information-item {
+  text-decoration: none;
+}
+@media (min-width: 801px) {
+  .footer-text {
+    width: 50vw;
+  }
+}
 /* responsive navbar for laptop, phone menu should not appear*/
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .phoneMenu {
     display: none;
   }

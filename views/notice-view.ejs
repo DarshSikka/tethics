@@ -3,11 +3,9 @@
     <h1>
         <%= notice.title %>
     </h1>
-        <%- notice.description %><br /><br />
-        <embed src="<%= notice.attachment %>" />
-        <br />
-        <a href="<%= notice.attachment %>" target="_blank" class="open-in-new-tab">Open attachment in new tab</a>
-        <% console.log(notice.attachment) %>
+        <%- notice.description %><br />
+        <a href="<%= notice.attachment %>" target="_blank" class="open-in-new-tab"><i class="fas fa-external-link-alt"></i>Open attachment in new tab</a><br />
+        <embed style="margin-top: 30px;margin-bottom: 50px;"src="<%= notice.attachment %>" />
 </div>
 <style>
 

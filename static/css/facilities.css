@@ -27,7 +27,7 @@
   color: orange;
 }
 .arrow {
-  font-size: 70px;
+  font-size: 40px;
 }
 .main-card {
   width: 70vh;
@@ -51,7 +51,7 @@
 .arrow {
   color: white;
 }
-@media (min-width: 800px) {
+@media (min-width: 801px) {
   .main-card-image {
     width: 26vw;
     height: 25vh;
