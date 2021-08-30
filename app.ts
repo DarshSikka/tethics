@@ -47,7 +47,12 @@ app.get("/", (req: express.Request, res: express.Response) => {
 
 // send updates.ejs in /updates
 app.get("/updates", async (req: express.Request, res: express.Response) => {
-  const notices = await Notice.find({});
+  let { filter } = req.query;
+  if (!filter) filter = "";
+  let notices = await Notice.find({});
+  notices = notices.filter((ele) =>
+    ele.title.toUpperCase().includes(String(filter).toUpperCase())
+  );
   res.render("updates", {
     updates: notices,
   });
@@ -61,8 +66,12 @@ app.get("/facilities", (req: express.Request, res: express.Response) => {
 //handle dynamic update root
 app.get("/update/:id", async (req: express.Request, res: express.Response) => {
   const { id } = req.params;
-  const ntc = await Notice.findOne({ _id: id });
-  console.log(ntc);
+  const ntc = await Notice.findOne({ _id: id }).catch(() => {
+    res.sendFile(stat + "/404.html");
+  });
+  if (!ntc) {
+    res.sendFile("404.html");
+  }
   res.render("notice-view", {
     notice: ntc,
   });

@@ -16,3 +16,11 @@
 .update-link {
   text-decoration: none;
 }
+.input-filter {
+  background: var(--app-light);
+  font-family: "Inter", sans-serif;
+  padding: 1rem;
+  font-size: 30px;
+  height: 30px;
+  width: 40vw;
+}

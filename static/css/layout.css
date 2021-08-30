@@ -1,33 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+/* colors defined */
 :root {
   --app-dark: #02223e;
   --app-light: #ffffff;
 }
+
+/* Set body to be unscrollable horizontally */
 body {
   overflow-x: hidden !important;
 }
+
+/* Define styles for the text on top of image*/
 .hero-text {
   position: absolute;
   z-index: 2;
   background: rgba(96, 96, 96, 0.9);
   top: 20rem;
-  left: 10rem;
+  left: 34rem;
   color: var(--app-light) !important;
   width: 23%;
 }
+/* Make text more transparent because it comes on the full image when a small device*/
+@media (max-width: 800px) {
+  .hero-text {
+    background: rgba(96, 96, 96, 0.6);
+  }
+}
+
+/* Position the hero image*/
 .hero {
   z-index: -1;
   height: 80%;
   width: 98%;
   top: 4rem;
 }
+
+/* Give more space between logo and pc menu*/
 .pc-menu {
   margin-left: 6rem;
 }
+
+/* Make phone menu 3 bars clearly visible*/
 .phoneMenu {
   font-size: 50px;
   padding: 0px 0px;
 }
+/* Styles to make image and text better on phone*/
 @media (max-width: 800px) {
   .hero {
     height: 25%;
@@ -39,14 +58,16 @@ body {
     width: 98%;
   }
 }
+/* navbar */
 .nav {
   display: flex;
   justify-content: space-around;
 }
+/* set default font to Roboto */
 body {
   font-family: "Roboto", sans-serif;
-  overflow-x: none;
 }
+/* nav container styles*/
 nav {
   position: fixed;
   z-index: 4;
@@ -55,19 +76,23 @@ nav {
   width: 100%;
   background-color: var(--app-light);
 }
+/* give top margin to logo*/
 .navbar-head {
   margin-top: 4px;
 }
+/* make logo in the center*/
 .navbar-head {
   display: flex;
   height: 100%;
   align-items: center;
 }
+
+/* remove underlining from navbar links */
 .nav-link {
   text-decoration: none;
   color: var(--app-dark);
 }
-
+/* Footer styles */
 .footer {
   width: 100%;
   height: 15rem;
@@ -93,6 +118,7 @@ iframe {
   font-size: 15px;
   text-align: left;
 }
+/* Footer for phone*/
 @media (max-width: 800px) {
   .footer {
     margin-top: 2rem;
@@ -110,12 +136,13 @@ iframe {
   }
 }
 
+/* responsive navbar for laptop, phone menu should not appear*/
 @media (min-width: 800px) {
   .phoneMenu {
     display: none;
   }
 }
-
+/* Styles for navbar on pc/laptop */
 .pc-menu {
   display: flex;
   justify-content: space-around;

@@ -122,6 +122,9 @@ form {
   align-items: left;
   padding: 0rem 10rem;
 }
+.card {
+  margin: auto;
+}
 @media (max-width: 800px) {
   form {
     padding: 0rem 1rem;
@@ -135,6 +138,13 @@ form {
   }
   select {
     width: 20.5rem !important;
+  }
+}
+@media (min-width: 700px) {
+  @media (max-width: 800px) {
+    form {
+      align-items: center;
+    }
   }
 }
 .admission input,

@@ -1,5 +1,10 @@
-
-<div class="updates"><% updates.forEach(update=>{ %>
+<div class="updates">
+    <form>
+        <div style="display: flex;justify-content: space-around;"><input name="filter" class="input-filter"placeholder="filter"/>
+        <button type="submit"style="font-size: 50px;"><i class="fas fa-search"></i></button>
+    </div>
+    </form>
+    <% updates.forEach(update=>{ %>
     <% console.log(update) %>
     <a href="/update/<%= update._id %>" class="update-link">
         <div class="update-column">

@@ -7,20 +7,36 @@ let i = 0;
 // create data for slideshow
 const data = [
   {
-    title: "Air conditioned classrooms and auditoriums",
-    image: "assets/Slide1.png",
+    title: "Air conditioned classrooms and <br />auditoriums",
+    image: "/assets/Slide1.png",
   },
   {
-    title: "Sport-rooms (Cricket, Football, Basketball, <br />Indoors)",
-    image: "assets/breakpoint7.jpg",
+    title: "Sport-rooms (Cricket, Football, <br /> Basketball, Indoors)",
+    image: "/assets/breakpoint7.jpg",
   },
   {
     title: "Both Offline and Online<br /> Learning available",
-    image: "assets/breakpoint4.jpg",
+    image: "/assets/breakpoint4.jpg",
   },
   {
     title: "Entrepreneurship Incubators",
-    image: "assets/breakpoint5.jpg",
+    image: "/assets/breakpoint5.jpg",
+  },
+  {
+    title: "Cookery classes",
+    image: "/assets/cookery.jpg",
+  },
+  {
+    title: "Computer labs with latest <br />devices and education offered",
+    image: "/assets/computer.png",
+  },
+  {
+    title: "24x7 Library",
+    image: "/assets/breakpoint8.jpg",
+  },
+  {
+    title: "Hostel Facilities",
+    image: "/assets/breakpoint9.jpg",
   },
 ];
 
