@@ -11,6 +11,7 @@ input {
 /* Set body to be unscrollable horizontally */
 body {
   overflow-x: hidden !important;
+  margin: 0;
 }
 
 /* Define styles for the text on top of image*/
@@ -35,7 +36,7 @@ body {
 .hero {
   z-index: -1;
   height: 80%;
-  width: 98%;
+  width: 100%;
   top: 4rem;
 }
 
