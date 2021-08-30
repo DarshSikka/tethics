@@ -5,7 +5,9 @@
   --app-dark: #02223e;
   --app-light: #ffffff;
 }
-
+input {
+  outline: none;
+}
 /* Set body to be unscrollable horizontally */
 body {
   overflow-x: hidden !important;
